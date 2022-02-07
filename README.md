@@ -28,6 +28,10 @@ git clone https://github.com/EliTheCodeBard/curso-frontend.git
 ## Commits
 Informação de alteração
 - depois de testado todo o código
+- git add *
+- git commit -m "mensagem"
+- git push (enviar alterações para o repositório GitHub)
+- git pull (puxar / trazer alterações do GitHub para sua máquina)
 
 ## GitFlow
 Fluxo do Git
