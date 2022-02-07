@@ -4,7 +4,7 @@
 ## Conceitos de versionamento
  - Histórico
  - Controle de versão
- - Quem alterou
+ - Quem alterou,
  - Quando alterou
  - Todos os arquivos
  - Evolução contínua
@@ -22,6 +22,7 @@ Mac (brew): brew install git
 ## Criar conta no GitHub
 
 ## Clonar o projeto
+git clone https://github.com/EliTheCodeBard/curso-frontend.git
 
 ## Commits
 Informação de alteração
