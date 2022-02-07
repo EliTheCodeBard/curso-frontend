@@ -1,0 +1,353 @@
+/* Importando CSS de Tabelas */
+@import url('tabelas.css');
+
+/* 
+
+	HERANÇA
+
+	1. Sobreposição / Sobrescreve
+	2. Aplica a último estilo definido
+	3. Prioriza estilo específicas (com seletores mais próximos)
+	4. Se aplica a todas as propriedades
+
+ */
+
+html {
+	font-family: sans-serif;
+	color: #333333;
+}
+
+header p {
+	color: #FEF601;
+	font-size: 1.5rem;
+}
+
+/* 
+
+	Combinadores 
+	
+	(espaço) seletor descendente 
+	(>) combinador de seletores filhos
+	(+) combinador de elementos irmãos adjacentes / que vem logo na sequencia
+	(~) combinador de elementos irmãos geral / após elemento de referência
+
+	
+*/
+
+header h3 {
+	padding-bottom: 1.2rem;
+	font-weight:  bold;
+} 
+
+header > h2 {
+	font-weight: 600;
+	padding-bottom: .5rem;
+}
+
+div h3 {
+	font-family: arial black, helvetica, sans-serif;
+	font-weight: bolder;
+}
+
+div > h2 {
+	font-size: 2.1rem;
+}
+
+nav > h3 {
+   font-size: 1rem;
+   font-weight: bold;
+   padding-left: .5rem;
+   padding-bottom: 1rem;
+}
+
+/* PSEUDO-CLASSES */
+
+a {
+	color: #000;
+	text-decoration: none; /* o padrão é underline */
+	font-size: 1.5rem;
+}
+
+nav a {
+	display: block;
+}
+
+a:visited {
+	background-color: #eee;
+}
+
+a:active {
+	color: #096;
+}
+
+h2:hover {
+	color: #FEF601;
+}
+
+/* TIPOGRAFIA */
+
+h1, h2 {
+	font-size: bold;
+	font-weight: 100;
+	font-size: 1.8rem;
+	font-family: "Courier New", monospace;
+}
+
+header h3 {
+	font-size: bold;
+	font-weight: 100;
+	font-size: 1.8rem;
+	font-family: "Courier New", monospace;
+	padding-bottom: 1.2rem;
+}
+
+.center {
+	float:center;
+}
+
+.left{
+	border-radius: 20%;
+	float:left; 
+	margin-left:0; 
+	margin-right:15px; 
+	margin-bottom:5px;
+}
+
+#minha-foto {
+	border-radius: 50%;
+}
+
+nav h3 {
+	font-weight: bold;
+	font-size: 1.8rem;
+	font-family: "Courier New", monospace;
+	padding-top: 1.2rem;
+	padding-bottom: 1.2rem;
+}
+
+p {
+	font-weight: normal;
+	font-size: 1.4rem;
+}
+
+article p {
+	margin-top: 2rem;
+	margin-bottom: 20px;
+}
+
+article h3, article li {
+	color: white;	
+}
+
+ul {
+	padding-left: .5rem;
+	margin-left: .5rem;	
+}
+
+li {
+	letter-spacing: 0.01rem;
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+table-container div table th{
+	font-size: 8px;
+}
+
+/* CORES */
+
+body {
+	background: url('../images/fundomarajoara.png') center top repeat #EEEEEE;
+}
+
+section {
+	background: rgba(255, 100, 100, 0.95);
+}
+
+h1 {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	color: white; 
+	font-weight: bold;
+}
+
+footer p, article p {
+	color: #FEF601;
+}
+
+#tabmargin {
+	border: 5px outset #F2F5A9;
+	/*padding: 2rem;*/
+	border-spacing: 5px 10px;
+}
+
+#titulo-escuro {
+	color:black;
+}
+
+header,
+footer {
+	background-color: #2E2E2E;
+}
+
+footer p {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.artigo {
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 1.5rem;
+}
+
+.artigo div p {
+	width: 100%;
+}
+
+#cafe {
+	border-radius:25%;
+	display: block;
+}
+
+figure figcaption {
+	color:yellow;
+	margin-left: 40px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.navegacao {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 0.5rem;
+}
+
+.navegacao li a {
+	color: white;
+	font-size: 1.4rem;
+}
+
+.navegacao li a:hover {
+	background-color: rgba(255, 255, 0, .7);
+	color: #000000;
+}
+
+article p a {
+	background-color: #aaf;
+}
+
+.coluna {
+	display: block;
+	width: 50%;
+	float: left;
+	padding: 5px;
+}
+
+.coluna-2 {
+	display: flex;
+	float: left;
+	width: 50%;
+}
+
+.coluna-titulo{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#jess-figure {
+	float: center;
+	margin: 5px, auto, 0px, 15px;
+}
+
+/*Mobile first*/
+
+/*TABLET*/
+
+@media(max-width: 768px){
+	
+	nav, article{
+	  width: 100%;
+	  height: auto;
+	  float: center;
+	}
+	.navegacao {
+		text-align: center;
+		float: center;
+	}
+
+	form div{
+		width: 100%;
+		height: auto;
+		float: center;
+	}
+
+	.coluna {
+		min-width: unset;
+	}
+
+	#jess-figure {
+		float: center;
+		margin-left: 25px;
+		margin-right: auto;
+	}
+
+	#cafe{
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	figure figcaption {
+		margin-left: 0px;
+		text-align: center;
+	}
+
+}
+
+/*SMARTPHONE*/
+@media(max-width: 425px) {
+
+	nav, article, .coluna {
+		width: 100%;
+		min-width: 320px;
+		float: center;
+		text-align: center;
+	}
+
+	.artigo, article div {
+		float: center;
+		width: auto;
+	}
+
+	header h3, header h2, header p {
+		text-align: center;
+		margin-left: 80px;
+	}
+
+	figure figcaption {
+		float: center;
+		margin-left: 0px;
+	}
+
+	#h3-cont {
+		padding-bottom: 5px;
+	}
+
+	#cafe {
+		display:inline-block;
+	}
+
+	#jess-figure {
+		float: center;
+		margin-right: auto;
+	}
+
+	#label-opcoes p {
+		float: center;
+	  }	  
+
+	#opcoes{
+		float: center;
+	}
+
+}
