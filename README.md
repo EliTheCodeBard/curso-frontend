@@ -44,6 +44,23 @@ são ramificações / versões paralelas
 - DOD (Definition of Done: critério de aceite)
 - versionamento 1.0.0
 
+git checkout -b dev (cria uma branch)
+git checkout main/master (mudar de branch)
+
 ### Merge
 Mescla de branchs
+Você pode precisar resolver conflitos manualmente
+
+git merge main
+
+### Pull requests
+Mescla de branchs no repositório
+Permite code review
+O repositório resolve conflitos automaticamente
+
+
+### Configurar o GitFlow
+git flow init
+git flow feature start {nome-da-feature}
+
 
